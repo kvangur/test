@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="title" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <style>
+      #content1 {
+        padding: 200px 0 0;
+      }
+
+      img {
+        background-image: url(images/badge1.png);
+        background-repeat: no-repeat;
+        background-size: 149px 149px;
+      }
+
+      #icon {
+        width: 149px;
+      }
+
+      img:hover {
+        border: 6px solid white;
+        border-radius: 20px;
+        box-shadow: inset 0 0 0.7em 0.5em gray;
+      }
+
+      p {
+        text-align: center;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="content1">
+        <div class="owl-carousel">
+          <div id="icon">
+            <img src="images/ruplex.png" />
+            <p>Ruplex</p>
+          </div>
+          <div id="icon">
+            <a href="#"><img src="images/kartina_tv.png" /></a>
+            <p>Картина.ТВ</p>
+          </div>
+          <div id="icon">
+            <a href="#"><img src="images/first.png" /></a>
+            <p>Первый</p>
+          </div>
+          <div id="icon">
+            <a href="#"><img src="images/youtube.png" /></a>
+            <p>YouTube</p>
+          </div>
+          <div id="icon">
+            <a href="applications.html"><img src="images/apps.png" /></a>
+            <p>Приложения</p>
+          </div>
+          <div id="icon">
+            <a href="sourses.html"><img src="images/sources.png" /></a>
+            <p>Источники</p>
+          </div>
+          <div id="icon">
+            <a href="setup.html"><img src="images/setup.png" /></a>
+            <p>Настройки</p>
+          </div>
+          <div style="width: 15px"></div>
+        </div>
+      </div>
+      <!-- #content -->
+    </div>
+    <!-- #wrapper -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="owlcarousel/jquery.mousewheel.min.js"></script>
+
+    <script>
+      var owl = $('.owl-carousel')
+      owl.owlCarousel({
+        center: true,
+        margin: 60,
+        loop: true,
+        autoWidth: true,
+        items: 5,
+      })
+      owl.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY > 0) {
+          owl.trigger('next.owl')
+        } else {
+          owl.trigger('prev.owl')
+        }
+        e.preventDefault()
+      })
+      document.onkeydown = function (e) {
+        switch (e.keyCode) {
+          case 39:
+            owl.trigger('next.owl')
+            break
+          case 37:
+            owl.trigger('prev.owl')
+            break
+        }
+      }
+    </script>
+  </body>
+</html>

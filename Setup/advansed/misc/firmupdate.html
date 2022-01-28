@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title></title>
+  <meta name="title" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="../../../css/modal.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../../../css/select.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../../../css/button.css" type="text/css" media="screen, projection" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="content">
+      <fieldset class="status">
+        <legend>Статус</legend>
+        <p>Текущая версия прошивки: 201027_2355_r19</p>
+        <button class="button modal2-open" style="width: 330px;"><span href="#">Проверить доступные
+            обновления</span></button>
+      </fieldset>
+      <fieldset class="fieldSettings">
+        <legend>Настройки</legend>
+        <div class="info">
+          <div class="column">
+            <div class="setname">Игнорировать бета-версии:</div>
+            <div>
+              <div class="select smallerButton1">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Да</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item">Да</li>
+                  <li class="select__item">Нет</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="setname">Сообщать об ошибках при проверке:</div>
+            <div>
+              <div class="select smallerButton1">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Нет</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item"><span>Нет</span></li>
+                  <li class="select__item"><span>Да</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="setname">Автообновление в режиме ожидания:</div>
+            <div>
+              <div class="select smallerButton1">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Да</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item"><span>Да</span></li>
+                  <li class="select__item"><span>Нет</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </fieldset>
+    </div><!-- #content-->
+  </div><!-- #wrapper -->
+  <div class="modal" id="modal2">
+    <div class="dialog2" style="width: 330px;">
+      <p class="string">Онлайн обновление прошивки</p>
+      <p style="text-align: center;"> Нет новых версий прошивки.</p>
+            <button class="button" style="width: 230px;">
+        <span href="#" class="innerButton">Показать все версии</span>
+      </button>
+      <button class="button" id="cancel" style="width: 230px;">
+        <span href="#" class="innerButton">Отмена</span>
+      </button>
+    </div>
+  </div>
+  <script src="../../../js/1jquery.min.js"></script>
+  <script src="../../../js/select.js"></script>
+  <script src="../../../js/modal.js"></script>
+</body>
+
+</html>

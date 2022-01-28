@@ -1,0 +1,130 @@
+.select {
+  position: relative;
+  display: block;
+/*  min-width: 220px;*/
+  width: 100%;
+  line-height: 29px;
+/*  height: 3px;*/
+/*  max-width: 630px;*/
+}
+
+.select__head {
+  box-shadow: inset 0 52px 50px -70px white;
+  border: 3px solid transparent;
+  border-radius: 10px;
+/*  padding: 3px 0px 0px 0px;*/
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+/*  height: 24px;*/
+  text-indent: 0.8em;  
+}
+
+.select__head:hover {
+  border: 3px solid white;
+    
+}
+
+.select__head::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 3px;
+  border: 1px solid rgba(100, 100, 100, 0.8);
+  border-radius: 10px;
+}
+
+.select__head::after {
+  width: 8px;
+  height: 12px;
+  background: url(../images/arrow.png) no-repeat center / cover;
+  position: absolute;
+  right: 12px;
+  bottom: 50%;
+  transform: translateY(50%);
+  content: '';
+  display: block;
+  transition: .1s ease-in;
+}
+
+.select__head.open::after {
+  transform: translateY(50%) rotate(90deg);
+}
+
+.select__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 1px;
+  right: 1px;
+  background: black;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgba(100, 100, 100, 0.5);
+/*  margin-top: 5px;*/
+  max-height: 235px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  padding-top: 4px;
+  font-size: 20px;
+  color: white;
+  scrollbar-color: dark;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+}
+
+.select__list::-webkit-scrollbar {
+  width: 12px;
+  background-color: gray;
+    border-radius: 10px;
+}
+
+.select__list::-webkit-scrollbar-thumb {
+  box-shadow: inset 12px 12px white;
+  border-radius: 14px;
+  /* background-color: white; */
+  /* border-left: solid 4px black;
+  border-right: solid 4px black; */
+  border: solid 4px transparent;
+
+  
+} 
+.select__list::-webkit-scrollbar-track {
+  box-shadow: inset 12px 12px gray;
+  border-radius: 10px;
+  /* background-color: white; */
+  border: solid 4px black;
+} 
+
+
+.select__list .select__item {
+  position: relative;
+  border: 3px solid transparent;
+/*  line-height: 4px;*/
+/*  padding: 11px 15px;*/
+  cursor: pointer;
+  list-style-type: none;
+  text-indent: 0.8em; 
+}
+
+.select__list .select__item::after {
+  content: '';
+  border-radius: 10px;
+  position: absolute;
+
+  
+}
+
+.select__list .select__item:hover::after {
+  border: 3px solid white;
+  top: -3px;
+  left: 3px;
+  bottom: -5px;
+  right: 1px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title></title>
+  <meta name="title" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="../css/modal.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../css/select.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../css/button.css" type="text/css" media="screen, projection" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="content">
+      <fieldset class="status">
+        <legend>Статус</legend>
+        <p>Текущий видеорежим:<span class="sdvig">Цифровой (HDMI) 4K 2160p 60Hz</span></p>
+      </fieldset>
+      <div>
+        <fieldset class="fieldSettings">
+          <legend>Настройки</legend>
+          <div class="info">
+            <div class="column">
+              <div class="setname" style="width: 260px;">Видеорежим:</div>
+              <div class="select" style="width: 220px;">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Авто(EDID)</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item">Авто(EDID)</li>
+                  <li class="select__item">480i 59.94Hz (NTSC)</li>
+                  <li class="select__item">480p 59.94Hz</li>
+                  <li class="select__item">480p 60Hz</li>
+                  <li class="select__item">576i 50Hz (PAL)</li>
+                  <li class="select__item">576p 50Hz</li>
+                  <li class="select__item">576p 50Hz</li>
+                  <li class="select__item">720p 50Hz</li>
+                  <li class="select__item">720p 59.94Hz</li>
+                  <li class="select__item">720p 60Hz</li>
+                  <li class="select__item">1080i 50Hz</li>
+                  <li class="select__item">1080i 59.94Hz</li>
+                  <li class="select__item">1080i 60Hz</li>
+                  <li class="select__item">1080p 23.976Hz</li>
+                  <li class="select__item">1080p 24Hz</li>
+                  <li class="select__item">1080p 50Hz</li>
+                  <li class="select__item">1080p 59.94Hz</li>
+                  <li class="select__item">1080p 60Hz</li>
+                  <li class="select__item">4K 2160p 23.976Hz</li>
+                  <li class="select__item">4K 2160p 24Hz</li>
+                  <li class="select__item">4K 2160p 25Hz</li>
+                  <li class="select__item">4K 2160p 29.97Hz</li>
+                  <li class="select__item">4K 2160p 30Hz</li>
+                  <li class="select__item">4K 2160p 50Hz</li>
+                  <li class="select__item">4K 2160p 59.94Hz</li>
+                  <li class="select__item">4K 2160p 60Hz</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="column">
+              <div class="setname" style="width: 260px;" >Авто частота кадров:</div>
+              <div class="select" style="width: 220px;">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Отключена</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item"><span>Отключена</span></li>
+                  <li class="select__item">Все (24/50/60Hz)</li>
+                  <li class="select__item">Кроме 24p (50/60Hz)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column">
+              <div class="setname" style="width: 260px;"><span>Дополнительные настроки:</span></div>
+              <button class="button modal1-open" style="width: 220px;">Изменить...</button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+    </div><!-- #content-->
+  </div><!-- #wrapper -->
+  <div class="modal" id="modal1">
+    <div class="dialog1" style="width: 430px;">
+      <p class="string">Дополнительные настройки видео</p>
+      <div class="info">
+
+        <div class="columnModal">
+          <div class="setname">Режим Deep Color:</div>
+
+          <div class="select" style="width: 200px;">
+            <input class="select__input" type="hidden" name="">
+            <div class="select__head"><span>Выключен</span></div>
+            <ul class="select__list" style="display: none;">
+              <li class="select__item">Выключен</li>
+              <li class="select__item">Включен</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="columnModal">
+          <div class="setname">Подавление шума:</div>
+
+          <div class="select" style="width: 200px;">
+            <input class="select__input" type="hidden" name="">
+            <div class="select__head"><span>Да</span></div>
+            <ul class="select__list" style="display: none;">
+              <li class="select__item"><span>Да</span></li>
+              <li class="select__item"><span>Нет</span></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="columnModal">
+          <div class="setname">Режима деинтерлейсинга:</div>
+
+          <div class="select" style="width: 200px;">
+            <input class="select__input" type="hidden" name="">
+            <div class="select__head"><span>Резко</span></div>
+            <ul class="select__list" style="display: none;">
+              <li class="select__item"><span>Резко</span></li>
+              <li class="select__item"><span>Гладко</span></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="columnModal">
+          <div class="setname">Режим RGB:</div>
+
+          <div class="select" style="width: 200px;">
+            <input class="select__input" type="hidden" name="">
+            <div class="select__head"><span>Выключен</span></div>
+            <ul class="select__list" style="display: none;">
+              <li class="select__item">Выключен</li>
+              <li class="select__item">Включен</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <button class="button moresmallerButton"><span href="#" class="innerButton">ОК</span></button>
+      <button class="button moresmallerButton" id="cancel1"><span href="#" class="innerButton">Отмена</span></button>
+    </div>
+  </div>
+  <script src="../js/1jquery.min.js"></script>
+  <script src="../js/select.js"></script>
+  <script src="../js/modal.js"></script>
+</body>
+
+</html>
