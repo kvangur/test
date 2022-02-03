@@ -1,180 +1,639 @@
-* { margin: 0; padding: 0; }
-html { height: 100%; min-width:1172px; }
-body { font-family:Veranda; font-size:20px; color:#fff; width:100%; height:100%; background:url(../images/bg.jpg) repeat-x 0 0 #000; background-size:100% 100%; }
-a { color:#fff; outline: none; text-decoration:none; }
-a:hover { text-decoration: none; }
-img { border: none; -ms-interpolation-mode: bicubic; }
-input { vertical-align: middle; font-family:veranda; }
-input::-moz-focus-inner { padding:0; border:0 }
-/*button::-moz-focus-inner { padding:0; border:0 }*/
-ul, ol { list-style:none; }/*убирает точки в списке*/
-*:focus {outline: none}
-.clear { clear:both; }
-h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+* {
+	margin: 0;
+	padding: 0;
+}
 
-#wrapper { width: 1172px; margin: 0 auto; min-height: 100%; height: auto !important; height: 100%; }
+html {
+	height: 100%;
+	min-width: 1172px;
+}
+
+body {
+	font-family: Veranda;
+	font-size: 20px;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg.jpg) repeat-x 0 0 #000;
+	background-size: 100% 100%;
+}
+
+a {
+	color: #fff;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	-ms-interpolation-mode: bicubic;
+}
+
+input {
+	vertical-align: middle;
+	font-family: veranda;
+}
+
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+/*button::-moz-focus-inner { padding:0; border:0 }*/
+ul, ol {
+	list-style: none;
+}
+
+/*убирает точки в списке*/
+*:focus {
+	outline: none
+}
+
+.clear {
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+#wrapper {
+	width: 1172px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
 /* Header
 -----------------------------------------------------------------------------*/
-#header { height: 150px; background: #FFE680; }
+#header {
+	height: 150px;
+	background: #FFE680;
+}
+
 /* Middle
 -----------------------------------------------------------------------------*/
-#content { padding:60px 0 0; }
-.dune_menu { margin:0 auto; }
-.top_sections { overflow:hidden; padding:0 0 0 24px; }
-.top_sections li { float:left; background:url(../images/top_section.png) no-repeat 40px 20px; margin:0 20px; }
-.top_sections li a { display:block; padding:69px 0 0; width:120px; text-align:center; }
-.top_sections li a:hover, .top_sections li.active a { background:url(../images/top_select.png) no-repeat center 4px; }
-.top_sections li.tv {  }
-.top_sections li.sourses { background-position:-51px 20px; }
-.top_sections li.favorites { background-position:-151px 20px; }
-.top_sections li.applications { background-position:-242px 20px; }
-.top_sections li.setup { background-position:-323px 19px; }
+#content {
+	padding: 60px 0 0;
+}
 
-.badges_list { height:494px; width:1200; }
-.badges_list li { float:left; width:165px; background:url(../images/setup_badge.png) no-repeat 7px 7px; margin:30px 30px 50px;}
-	.badges_list li a { display:block; }
+.dune_menu {
+	margin: 0 auto;
+}
 
-	/* Top MENU */
-	.badges_list li.ruplex a span { display:block; padding:158px 0 0; background:url(../images/ruplex.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-    .badges_list li.kartina a span { display:block; padding:158px 0 0; background:url(../images/video_settings.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.first a span { display:block; padding:158px 0 0; background:url(../images/first.png) no-repeat 7px 7px; text-align:center; line-height: 1.5;}
-	.badges_list li.youtube a span { display:block; padding:158px 0 0; background:url(../images/youtube.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.apps a span { display:block; padding:158px 0 0; background:url(../images/apps.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.sources a span { display:block; padding:158px 0 0; background:url(../images/sources.png) no-repeat 7px 7px ; text-align:center;line-height: 1.5; }
-	.badges_list li.setup a span { display:block; padding:158px 0 0; background:url(../images/setup.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+.top_sections {
+	overflow: hidden;
+	padding: 0 0 0 24px;
+}
 
-	.badges_list li a:hover { background:url(../images/badge_select3.png) no-repeat 0 0; }
+.top_sections li {
+	float: left;
+	background: url(../images/top_section.png) no-repeat 40px 20px;
+	margin: 0 20px;
+}
 
-	/* Top MENU - Приложения */
-	.badges_list li.netflix a span { display:block; padding:158px 0 0; background:url(../images/netflix.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-    .badges_list li.parom a span { display:block; padding:158px 0 0; background:url(../images/parom.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.mx a span { display:block; padding:158px 0 0; background:url(../images/mxplayer.png) no-repeat 7px 7px; text-align:center; line-height: 1.5;}
-	.badges_list li.dazn a span { display:block; padding:158px 0 0; background:url(../images/dazn.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.film a span { display:block; padding:158px 0 0; background:url(../images/movies_logo.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.last a span { display:block; padding:158px 0 0; background:url(../images/recent.png) no-repeat 7px 7px ; text-align:center;line-height: 1.5; }
-	.badges_list li.collection a span { display:block; padding:158px 0 0; background:url(../images/collection.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.browser a span { display:block; padding:158px 0 0; background:url(../images/web_browser.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.videobox a span { display:block; padding:158px 0 0; background:url(../images/hdbox.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.add a span { display:block; padding:158px 0 0; background:url(../images/more.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+.top_sections li a {
+	display: block;
+	padding: 69px 0 0;
+	width: 120px;
+	text-align: center;
+}
+
+.top_sections li a:hover, .top_sections li.active a {
+	background: url(../images/top_select.png) no-repeat center 4px;
+}
+
+.top_sections li.tv {}
+
+.top_sections li.sourses {
+	background-position: -51px 20px;
+}
+
+.top_sections li.favorites {
+	background-position: -151px 20px;
+}
+
+.top_sections li.applications {
+	background-position: -242px 20px;
+}
+
+.top_sections li.setup {
+	background-position: -323px 19px;
+}
+
+.badges_list {
+	height: 494px;
+	width: 1200;
+}
+
+.badges_list li {
+	float: left;
+	width: 165px;
+	background: url(../images/setup_badge.png) no-repeat 7px 7px;
+	margin: 30px 30px 50px;
+}
+
+.badges_list li a {
+	display: block;
+}
+
+/* Top MENU */
+.badges_list li.ruplex a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/ruplex.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.kartina a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/video_settings.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.first a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/first.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.youtube a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/youtube.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.apps a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/apps.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.sources a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/sources.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.setup a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/setup.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li a:hover {
+	background: url(../images/badge_select3.png) no-repeat 0 0;
+}
+
+/* Top MENU - Приложения */
+.badges_list li.netflix a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/netflix.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.parom a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/parom.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.mx a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/mxplayer.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.dazn a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/dazn.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.film a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/movies_logo.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.last a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/recent.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.collection a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/collection.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.browser a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/web_browser.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.rezka a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/hdrezka.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.add a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/more.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
 
-	/* Top MENU  - Источники*/
-	.badges_list li.network a span { display:block; padding:158px 0 0; background:url(../images/network.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-    .badges_list li.builtin_memory a span { display:block; padding:158px 0 0; background:url(../images/builtin_memory.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.usb a span { display:block; padding:158px 0 0; background:url(../images/usb.png) no-repeat 7px 7px; text-align:center; line-height: 1.5;}
-	.badges_list li.sd_card a span { display:block; padding:158px 0 0; background:url(../images/sd_card.png) no-repeat 7px 7px; text-align:center; line-height: 1.5;}
+/* Top MENU  - Источники*/
+.badges_list li.network a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/network.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
-	/* Top MENU  - Источники - Браузер сети*/
-	.badges_list li.samba a span { display:block; padding:158px 0 0; background:url(../images/network_folder.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-    .badges_list li.nfs a span { display:block; padding:158px 0 0; background:url(../images/nfs_folder.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.upnp a span { display:block; padding:158px 0 0; background:url(../images/upnp.png) no-repeat 7px 7px; text-align:center; line-height: 1.5;}
+.badges_list li.builtin_memory a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/builtin_memory.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
-	/* Настройки */
-	.badges_list li.general a span { display:block; padding:158px 0 0; background:url(../images/general_settings.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-    .badges_list li.video a span { display:block; padding:158px 0 0; background:url(../images/video_settings.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.network a span { display:block; padding:158px 0 0; background:url(../images/network.png) no-repeat 7px 7px; text-align:center; line-height: 1.5;}
-	.badges_list li.remote a span { display:block; padding:158px 0 0; background:url(../images/remote.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.kartina a span { display:block; padding:158px 0 0; background:url(../images/kartina_tv.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5;}
-	.badges_list li.advanced a span { display:block; padding:158px 0 0; background:url(../images/advanced_settings.png) no-repeat 7px 7px ; text-align:center;line-height: 1.5; }
-	.badges_list li.info a span { display:block; padding:158px 0 0; background:url(../images/info.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+.badges_list li.usb a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/usb.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
-	/* Настройки - Дополнительно */
-	.badges_list li.appearance a span { display:block; padding:158px 0 0; background:url(../images/appearance.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.apps a span { display:block; padding:158px 0 0; background:url(../images/apps.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.audio a span { display:block; padding:158px 0 0; background:url(../images/audio.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.misc a span { display:block; padding:158px 0 0; background:url(../images/misc.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.playback a span { display:block; padding:158px 0 0; background:url(../images/playback.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.system a span { display:block; padding:158px 0 0; background:url(../images/android.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+.badges_list li.sd_card a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/sd_card.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
-	/* Настройки - Дополнительно - Приложения */
-	.badges_list li.photo a span { display:block; padding:158px 0 0; background:url(../images/image_file.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-    .badges_list li.nbrowser a span { display:block; padding:158px 0 0; background:url(../images/network.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.weather a span { display:block; padding:158px 0 0; background:url(../images/widget.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.extensions a span { display:block; padding:158px 0 0; background:url(../images/apps.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+/* Top MENU  - Источники - Браузер сети*/
+.badges_list li.samba a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/network_folder.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
-	/* Настройки - Дополнительно - Воспроизведение */
-	.badges_list li.control a span { display:block; padding:158px 0 0; background:url(../images/misc.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-    .badges_list li.pre a span { display:block; padding:158px 0 0; background:url(../images/advanced_settings.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+.badges_list li.nfs a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/nfs_folder.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
-    /* Настройки - Дополнительно - Пульт */
-	.badges_list li.remote a span { display:block; padding:158px 0 0; background:url(../images/remote.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-    .badges_list li.addremote a span { display:block; padding:158px 0 0; background:url(../images/more.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+.badges_list li.upnp a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/upnp.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
-	/* Настройки - Дополнительно - Прочее */
-	.badges_list li.fbrowser a span { display:block; padding:158px 0 0; background:url(../images/file_browser.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-    .badges_list li.encoding a span { display:block; padding:158px 0 0; background:url(../images/encodings.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.power a span { display:block; padding:158px 0 0; background:url(../images/power.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
-	.badges_list li.update a span { display:block; padding:158px 0 0; background:url(../images/service_file.png) no-repeat 7px 7px ; text-align:center; line-height: 1.5; }
+/* Настройки */
+.badges_list li.general a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/general_settings.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.video a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/video_settings.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.network a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/network.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.remote a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/remote.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.kartina a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/kartina_tv.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.advanced a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/advanced_settings.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.info a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/info.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+/* Настройки - Дополнительно */
+.badges_list li.appearance a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/appearance.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.apps a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/apps.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.audio a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/audio.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.misc a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/misc.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.playback a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/playback.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.system a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/android.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+/* Настройки - Дополнительно - Приложения */
+.badges_list li.photo a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/image_file.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.nbrowser a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/network.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.weather a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/widget.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.extensions a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/apps.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+/* Настройки - Дополнительно - Воспроизведение */
+.badges_list li.control a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/misc.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.pre a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/advanced_settings.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+/* Настройки - Дополнительно - Пульт */
+.badges_list li.remote a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/remote.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.addremote a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/more.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+/* Настройки - Дополнительно - Прочее */
+.badges_list li.fbrowser a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/file_browser.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.encoding a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/encodings.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.power a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/power.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.badges_list li.update a span {
+	display: block;
+	padding: 158px 0 0;
+	background: url(../images/service_file.png) no-repeat 7px 7px;
+	text-align: center;
+	line-height: 1.5;
+}
 
 
 /* Footer
 -----------------------------------------------------------------------------*/
-#footer { width: 1000px; margin: -100px auto 0; height: 100px; background: #BFF08E; }
+#footer {
+	width: 1000px;
+	margin: -100px auto 0;
+	height: 100px;
+	background: #BFF08E;
+}
 
 /* Рамка с подписью
 -----------------------------------------------------------------------------*/
 .fieldSettings {
-  border: 1px groove #ddd !important;
-  padding: 1% 1.4em 25% 1.4em !important;
-  margin: 0 0 1.5em 0 !important;
-  -webkit-box-shadow: 0px 0px 0px 0px #000;
-  box-shadow: 0px 0px 0px 0px #000;
+	border: 1px groove #ddd !important;
+	padding: 1% 1.4em 25% 1.4em !important;
+	margin: 0 0 1.5em 0 !important;
+	-webkit-box-shadow: 0px 0px 0px 0px #000;
+	box-shadow: 0px 0px 0px 0px #000;
 }
+
 .status {
-  border: 1px groove #ddd !important;
-  padding: 0.5em 1.4em 0.7em 1.4em !important;
-  margin: 0 0 1.5em 0 !important;
-  -webkit-box-shadow: 0px 0px 0px 0px #000;
-  box-shadow: 0px 0px 0px 0px #000;
-   } 
+	border: 1px groove #ddd !important;
+	padding: 0.5em 1.4em 0.7em 1.4em !important;
+	margin: 0 0 1.5em 0 !important;
+	-webkit-box-shadow: 0px 0px 0px 0px #000;
+	box-shadow: 0px 0px 0px 0px #000;
+}
 
 legend {
-  text-align: left !important;
-  font-size: 12pt;
-  color: rgba(255, 255, 255, 0.7);
-  width: auto;
-  padding: 0 10px;
-  border-bottom: none;
+	text-align: left !important;
+	font-size: 12pt;
+	color: rgba(255, 255, 255, 0.7);
+	width: auto;
+	padding: 0 10px;
+	border-bottom: none;
 }
 
 .sdvig {
-    position:relative;
-    left: 70px;
+	position: relative;
+	left: 70px;
 }
 
 /*Таблица
 -----------------------------------------------------------------------------*/
 table {
-			border-collapse: collapse;
-		}
-		td,
-		th {
-			height: 15px;
-			text-align: inherit;
-			padding: 1px;
-		}
+	border-collapse: collapse;
+}
 
-		.column {
-			width: 50%;
-			display: flex;
-			white-space: nowrap;
+td,
+th {
+	height: 15px;
+	text-align: inherit;
+	padding: 1px;
+}
 
-		}
-		.main_column {
-			width: 80%;
-			display: flex;
-			white-space: nowrap;
-
-		}
-
- .setname {
-	width: 90%;
-	max-width: 420px;
-	/* border: 1px solid ; */
-	white-space: nowrap;
- }
- .columnModal {
+.column {
+	width: 50%;
 	display: flex;
 	white-space: nowrap;
-	
- }
+
+}
+
+.main_column {
+	width: 60%;
+	display: flex;
+	white-space: nowrap;
+
+}
+
+.setname {
+	width: 90%;
+	max-width: 420px;
+	padding-top: 3px;
+	white-space: nowrap;
+}
+
+.main_setname {
+	width: 55%;
+	max-width: 420px;
+	padding-top: 3px;
+	white-space: nowrap;
+}
+
+.columnModal {
+	display: flex;
+	white-space: nowrap;
+
+}

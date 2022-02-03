@@ -18,22 +18,100 @@
         <div id="content">
             <fieldset class="status">
                 <legend>Статус</legend>
-                <p style="padding-bottom: 5px; padding-left: 5px;">IP-адрес:<span style="left: 300px; position: relative;"> 192.168.0.1 [подключено к ASUS_5G]</span></span></p>
+                <p style="padding-bottom: 5px; padding-left: 5px;">IP-адрес:<span
+                        style="left: 195px; position: relative;"> 192.168.0.1 [подключено к ASUS_5G]</span></span></p>
             </fieldset>
             <div>
                 <fieldset class="fieldSettings">
+                    <div class="column">
+                        <div class="setname" style="width: 277px;"><span>Настройки Wi-Fi:</span></div>
+                        <button class="button modal1-open" style="width: 240px;">Изменить...</button>
+                    </div>
                     <legend>Настройки</legend>
-                    <div style="padding-bottom: 5px; padding-left: 5px;">Настройки Wi-Fi:</div>
-                    <div class="info">
-                        <div class="column">
-                            <a href="#"><button class="button" style="width: 225px;">Изменить настройки...</button></a>
+                    <div class="column">
+                        <div class="setname" style="width: 277px;">Режим:</div>
+                        <div class="select" style="width: 240px;">
+                            <input class="select__input" type="hidden" name="">
+                            <div class="select__head"><span>Авто (DHCP)</span></div>
+                            <ul class="select__list" style="display: none;">
+                                <li class="select__item"><span>Авто (DHCP)</span></li>
+                                <li class="select__item">Вручную</li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="column">
+                        <div class="setname" style="width: 277px;"></div>
+                        <button class="button modal1-open" style="width: 240px;">Отключить Wi-Fi</button>
+                    </div>
+                    
                 </fieldset>
             </div>
 
         </div><!-- #content-->
     </div><!-- #wrapper -->
+    <div class="modal" id="modal1">
+        <div class="dialog1" style="width: 430px;">
+          <p class="string">Дополнительные настройки видео</p>
+          <div class="info">
+    
+            <div class="columnModal">
+              <div class="setname">Режим Deep Color:</div>
+    
+              <div class="select" style="width: 200px;">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Выключен</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item">Выключен</li>
+                  <li class="select__item">Включен</li>
+                </ul>
+              </div>
+    
+            </div>
+    
+            <div class="columnModal">
+              <div class="setname">Подавление шума:</div>
+    
+              <div class="select" style="width: 200px;">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Да</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item"><span>Да</span></li>
+                  <li class="select__item"><span>Нет</span></li>
+                </ul>
+              </div>
+    
+            </div>
+            <div class="columnModal">
+              <div class="setname">Режима деинтерлейсинга:</div>
+    
+              <div class="select" style="width: 200px;">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Резко</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item"><span>Резко</span></li>
+                  <li class="select__item"><span>Гладко</span></li>
+                </ul>
+              </div>
+    
+            </div>
+            <div class="columnModal">
+              <div class="setname">Режим RGB:</div>
+    
+              <div class="select" style="width: 200px;">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head"><span>Выключен</span></div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item">Выключен</li>
+                  <li class="select__item">Включен</li>
+                </ul>
+              </div>
+    
+            </div>
+          </div>
+          <button class="button moresmallerButton"><span href="#" class="innerButton">ОК</span></button>
+          <button class="button moresmallerButton" id="cancel1"><span href="#" class="innerButton">Отмена</span></button>
+        </div>
+      </div>
     <script src="../js/1jquery.min.js"></script>
     <script src="../js/select.js"></script>
     <script src="../js/modal.js"></script>

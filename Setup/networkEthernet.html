@@ -18,15 +18,22 @@
         <div id="content">
             <fieldset class="status">
                 <legend>Статус</legend>
-                <p style="padding-bottom: 5px; padding-left: 5px;">IP-адрес:<span style="left: 20px; position: relative;">(не задан) [отключено]</span></p>
+                <p style="padding-bottom: 5px; padding-left: 5px;">IP-адрес:<span style="left: 200px; position: relative;">(не задан) [отключено]</span></p>
             </fieldset>
             <div>
                 <fieldset class="fieldSettings">
                     <legend>Настройки</legend>
-                    <p style="padding-bottom: 5px; padding-left: 5px;">IP-адрес:<span style="left: 20px; position: relative;"> 192.168.0.1 [подключено к ASUS_5G]</span></p>
-                    <div class="info">
+                     <div class="info">
                         <div class="column">
-                            <a href="#"><button class="button" style="width: 225px;">Изменить настройки...</button></a>
+                            <div class="setname" style="width: 277px;">Режим:</div>
+                            <div class="select" style="width: 220px;">
+                                <input class="select__input" type="hidden" name="">
+                                <div class="select__head"><span>Авто (DHCP)</span></div>
+                                <ul class="select__list" style="display: none;">
+                                  <li class="select__item"><span>Авто (DHCP)</span></li>
+                                  <li class="select__item">Вручную</li>
+                                </ul>
+                              </div>
                         </div>
                     </div>
                 </fieldset>
